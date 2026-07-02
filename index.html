@@ -35,6 +35,21 @@
         };
 
         pessoa.saudacao(); // Chama o método saudacao do objeto pessoa 
+
+        const anime = {
+            titulo: "Naruto",
+            genero: "Ação",
+            episodios: 220,
+            descricao: "Naruto Uzumaki é um jovem ninja que vive em Konoha e sonha em se tornar o Hokage.",
+            poder: "Chakra",
+            detalhes: function() {
+                console.log("Título: " + this.titulo + ", Gênero: " + this.genero + ", Episódios: " + this.episodios);
+                console.log("Descrição: " + this.descricao);
+                console.log("Poder: " + this.poder);
+            }
+        };
+
+        anime.detalhes(); // Chama o método detalhes do objeto anime
     </script>
 </body>
 </html>
